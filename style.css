@@ -1,0 +1,155 @@
+
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+header{
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+}
+
+
+.topo{
+    margin: auto;
+    width: 1160px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a{
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 20px;
+
+    width: 133px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #4C12A1;
+    color: #FFFFFF;
+}
+
+.flex-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coluna{
+    background-color: #ffff;
+    width:275px ;
+    height: 608px;
+    border-radius: 8px;
+    margin: 10px;
+    overflow-y: auto;
+}
+
+    .coluna .head {
+        width: 275px;
+        height: 40px;
+        border-radius: 8px 8px 0px 0px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+        .coluna .head h2 {
+            color:black;
+            font-size: 14px;
+        }
+
+.ticket{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    margin: 8px;
+
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    background: white;
+}
+    .ticket .ilustracao {
+     padding: 16px 16px 0px 16px;
+    }
+
+    .ticket .ilustracao img{
+        width: 100%; 
+       
+        }
+
+    .ticket .tipoTicket {
+        background: #CAD1EB;
+        font-size: 12px;
+        text-align: center;
+        color: #1F1F49;
+        
+        border-radius: 8px;
+        padding:0px 10px;
+        margin: 14px 0px 9px 16px;
+    }
+    .ticket .codigo {
+        font-size: 14px;
+        color: black;
+        margin: 0px 0px 0px 16px;
+    }
+
+    .ticket .descricao {
+        color: rgb(104, 103, 103);
+        font-size: 14px;
+        overflow-wrap: break-word;
+        width: 100%;
+        margin: 0px 0px 24px 16px;
+    }
+    .ticket .rodape {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px 0px 24px 0px;
+    }
+        .ticket .rodape .nomeResponsavel {
+            font-size: 12px;
+            color: #1F1F49;
+            margin-left: 16px;
+        }
+        .ticket .rodape button {
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 21.24px;
+        }
+
+#quadro1{
+    background-color: #fcbcc0;
+}
+
+#quadro2{
+    background-color: #f2d1c0;
+}
+
+#quadro3{
+    background-color: #cbedba;
+}
+
+#quadro4{
+    background-color: #dbdada;
+}
