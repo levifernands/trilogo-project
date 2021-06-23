@@ -2,8 +2,9 @@
 <html LANG="PT-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME - Levi</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="imagens/icon.ico">
@@ -12,24 +13,66 @@
 <body>
     <header>
         <div class="topo">
-            <div class="logo">
                 <img src="imagens/image 1.png" >
-            </div>
             <div class="menu">
-                <a href="#">
+                <button onclick="abrirPopup()" class="botaoNovoTicket">
                     <img src="imagens/plus.png" alt="">
                     Novo Ticket
-                </a>
+                </button>
             </div>
         </div>
     </header>
 
-    <section class="flex-container">
+    <div class="popup"> <!--ÁREA DO POPUP-->
+      <div class="conteudoPopup">
+        <div class="tituloPopup">
+            <h3 class=>Novo Ticket</h3>
+            <button onclick="fecharPopup()" class="botaoFecharPopup">
+            <img src="imagens/close.png" alt="close" >
+            </button>
+        </div>
+        
+    <form onsubmit="return false" action="." method="post" class="formulario">
+        <label for="inputDescription" class="subtituloPopup obrigatorio">Descrição</label>
+        <input type="text" id="inputDescription" placeholder="Input" required>
+
+        <label for="selectType" class="subtituloPopup obrigatorio">Tipo</label>&nbsp
+        <select id="selectType" name="Tipo" required>
+        <option value="">Selecionar tipo:</option>
+        <option value="Procedimento">Procedimento</option>
+        <option value="Predial">Predial</option>
+        <option value="Bem">Bem</option>
+        </select> 
+
+        <label for="selectResponsible" class="subtituloPopup obrigatorio">Responsável</label>
+        <select id="selectResponsible" name="Responsável" required>
+        <option value="">Selecionar responsável:</option>
+        <option value="Joel Maia">Joel Maia</option>
+        <option value="Lisleny Ribeiro">Lisleny Ribeiro</option>
+        <option value="Levi Fernandes">Levi Fernandes</option>
+        </select>
+
+        <label for="caixaInbox" class="subtituloPopup">Imagem</label>
+        <div id="caixaInbox">
+            <img src="imagens/inbox.png">
+            <p>Arraste uma imagem para anexar ao ticket</p>
+        </div>
+        <div class="rodapePopup">
+            <button onclick="addTicket()" type="button" class="submitCriarTicket">Criar Ticket</button>
+        </div>
+    </form>
+      </div>
+    </div><!--FIM DO POPUP-->
+
+    <section id="principal">
         <div class="coluna">
             <div class="head" id="quadro1">
                 <h2>Abertos</h2>
             </div>
-             <div class="ticket">
+            <div class="conteudoColuna">
+
+                <!--INICIO DO TICKET-->
+                <div class="ticket">
                     <div class="ilustracao">
                         <img src="imagens/vazamento.jpg" alt="">
                     </div>
@@ -47,13 +90,14 @@
                             Yudi Tamashiro
                         </div>
                             <button>
-                                <img src="imagens/ret.png" width="20,98">
+                                <img src="imagens/ret.png" class>
                             </button>
                     </div>     
-            </div><!--FIM DO TICKET--> 
+                </div>
+                <!--FIM DO TICKET--> 
 
-
-            <div class="ticket">
+        <!--INICIO DO TICKET
+            <div class="ticket"> 
                 <div class="ilustracao">
                     <img src="imagens/ar-condicionado-quebrado.jpg" alt="">
                 </div>
@@ -61,7 +105,7 @@
                         Procedimento
                 </div>
                 <div class="codigo">
-                    <b>6526</b>
+                    <b>6867</b>
                 </div>
                 <div class="descricao">
                     Consertar o ar-condicionado, que apresenta problemas de ventilação
@@ -75,7 +119,34 @@
                     </button>
                 </div>
             </div>
-            
+             FIM DO TICKET-->
+
+
+            <!--INICIO DO TICKET
+                <div class="ticket"> 
+                <div class="ilustracao">
+                    <img src="" alt="">
+                </div>
+                <div class="tipoTicket">
+                       
+                </div>
+                <div class="codigo">
+                    <b></b>
+                </div>
+                <div class="descricao">
+                    
+                </div>
+                <div class="rodape">
+                    <div class="nomeResponsavel" id="Priscilla">
+                        
+                    </div>
+                    <button>
+                        <img src="imagens/ret.png" width="20,98">
+                    </button>
+                </div>
+            </div>
+            --FIM DO TICKET-->
+        </div>
         </div>
 
         <div class="coluna">
@@ -97,6 +168,7 @@
             </div>
         </div>
     </section>
+<script src="scripts/main.js"></script>
 </body>
 
 </html>
