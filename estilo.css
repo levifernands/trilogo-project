@@ -1,8 +1,9 @@
-* {
+
+*{
 	margin: 0;
 	padding: 0;
-	font-family: 'Inter', sans-serif;
-	box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
 a {
@@ -51,7 +52,7 @@ button {
     color: #FFFFFF;
 }
 
-   .menu button:hover{
+    .menu button:hover{
         background: #ac91d3;
         color: #FFFFFF;
     }
